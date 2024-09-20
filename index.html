@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assigment</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <!-- Header Section -->
+    <div class="project">
+    <header>
+        <nav class="navbar">
+
+            <div class="logo">
+                <p class="logo_p">Clove<span>:)</span></P>
+                <p class="logo_d">D E N T A L</p>
+            </div>
+            <ul class="nav-links">
+                <li class="dropdown-nav">
+                    <a href="#">Treatments <span class="dropdown-icon">&#8744;</span></a>
+                    <div class="dropdown-content">
+                        <div class="dropdown-grid">
+                            <a href="#">Advance Gum Treatments <span class="arrow">&#8594;</span></a>
+                            <a href="#">Bridges and Crowns <span class="arrow">&#8594;</span></a>
+                            <a href="#">Braces and Aligners <span class="arrow">&#8594;</span></a>
+                            <a href="#">Clear Aligners <span class="arrow">&#8594;</span></a>
+                            <a href="#">Dental Fillings <span class="arrow">&#8594;</span></a>
+                            <a href="#">Dental Implants <span class="arrow">&#8594;</span></a>
+                            <a href="#">Dentures <span class="arrow">&#8594;</span></a>
+                            <a href="#">Mouth Ulcers <span class="arrow">&#8594;</span></a>
+                            <a href="#">Kids Dentistry <span class="arrow">&#8594;</span></a>
+                            <a href="#">Preventive Dentistry <span class="arrow">&#8594;</span></a>
+                            <a href="#">Root Canal Treatments <span class="arrow">&#8594;</span></a>
+                            <a href="#">Smile Makeover <span class="arrow">&#8594;</span></a>
+                            <a href="#">Teeth Whitening <span class="arrow">&#8594;</span></a>
+                            <a href="#">Wisdom Teeth Removal <span class="arrow">&#8594;</span></a>
+                            <a href="#" class="btn book-appointment">Need help? Call Clove Dental</a>
+                        </div>
+                    </div>
+                <li><a>Dental Plans<span class="dropdown-icon">&#8744;</span></a></li>
+                <li><a>Our Doctors</a></li>
+                <li><a>Careers</a></li>
+                <li><a>Find a Clinic</a></li>
+            </ul>
+            <div class="nav-actions">
+                <div class="book-button-card">
+                    <a href="#" class="btn-b book-appointment">Book Appointment</a>
+                    <div class="modal">
+                        <div class="modal-content">
+                            <span class="close">&times;</span>
+                            <h2>Book your consultation at Clove Dental</h2>
+                            <p>Please fill out the form below to book a consultation with Clove Dental.</p>
+
+                            <h3>Step 1. Personal Details</h3>
+
+                            <form class="appointment-form">
+                                <div class="form-group">
+                                    <label for="fullName">Full Name</label>
+                                    <input type="text" id="fullName" value="Amit">
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">Email</label>
+                                    <input type="email" id="email" placeholder="Email">
+                                </div>
+                                <div class="form-group">
+                                    <label for="mobile">Mobile</label>
+                                    <input type="text" id="mobile" placeholder="Mobile">
+                                </div>
+                                <div class="form-group">
+                                    <label for="otp">Enter OTP</label>
+                                    <div class="otp-verify">
+                                        <input type="text" id="otp" placeholder="Enter OTP">
+                                        <button class="verify-btn">Verify</button>
+                                    </div>
+                                </div>
+                                <button type="submit" class="next-btn">Next</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="help-dropdown">
+                    <a href="#" class="btn-h help"><span class="dropdown-icon-phone">&#128222;</span>Help? <span class="dropdown-icon">&#8744;</span></a>
+                    <div class="dropdown-content-help">
+                        <div class="dropdown-help-card">
+                            <div>
+                                <h1 class="dropdown-card-head">North India</h1>
+                                <p class="dropdown-card-para">+91123456789></p>
+                            </div>
+                            <div>
+                                <span class="dropdown-card-icon">&#128222;</span>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="dropdown-help-card">
+                            <div>
+                                <h1 class="dropdown-card-head">South India</h1>
+                                <p class="dropdown-card-para">+91123456789></p>
+                            </div>
+                            <div>
+                                <span class="dropdown-card-icon">&#128222;</span>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="dropdown-help-card">
+                            <div>
+                                <h1 class="dropdown-card-head">Mail Us</h1>
+                                <p class="dropdown-card-para">Care@clovedental.in></p>
+                            </div>
+                            <div>
+                                <span class="dropdown-card-icon">&#128231;</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="carousel-container">
+            <div class="carousel-slides">
+                <input type="radio" name="carousel" id="slide1" checked>
+                <input type="radio" name="carousel" id="slide2">
+                <div class="carousel-images">
+                    <div class="carousel-image">
+                        <!--<img src="your-image-1.jpg" alt="Slide 1">-->
+                        <div class="carousel-image-card"></div>
+                    </div>
+                    <div class="carousel-image">
+                        <!--<img src="your-image-2.jpg" alt="Slide 2">-->
+                        <div class="carousel-image-card"></div>
+                    </div>
+                </div>
+                <!-- Navigation -->
+                <div class="carousel-navigation">
+                    <label for="slide1" class="nav-btn"></label>
+                    <label for="slide2" class="nav-btn"></label>
+                </div>
+            </div>
+        </div>
+    </main>
+    <main>
+        <div class="main-container">
+            <div class="container">
+                <div class="dropdown-city">
+                    <select name="city" id="city-select">
+                        <option value="" disabled selected>   Select your City</option>
+                        <option value="ahmedabad">Ahmedabad</option>
+                        <option value="amritsar">Amritsar</option>
+                        <option value="bengaluru">Bengaluru</option>
+                        <option value="chandigarh">Chandigarh</option>
+                        <option value="chennai">Chennai</option>
+                        <option value="delhi">Delhi</option>
+                        <option value="amritsar">Amritsar</option>
+                        <option value="bengaluru">Bengaluru</option>
+                        <option value="chandigarh">Chandigarh</option>
+                        <option value="chennai">Chennai</option>
+                    </select>
+                </div>
+                <button class="locate-btn">Locate nearest Clove clinic</button>
+            </div>
+        </div>
+    </main>
+    <main>
+        <div class="services-section">
+            <div class="service-head">
+                <h2>All dental issues from simple cleaning to full mouth rehabilitation under one roof</h2>
+            </div>
+            <div class="services-grid">
+                <div class="service-item">
+                    <span class="item-symbol">&#129463;</span>
+                    <p class="list-name">Root Canal Treatment</p>
+                </div>
+                <div class="service-item">
+                    <span class="item-symbol">&#129463;</span>
+                    <p class="list-name">Braces</p>
+                </div>
+                <div class="service-item">
+                    <span class="item-symbol">&#x1F9B7;</span>
+                    <p class="list-name">Teeth Whitening</p>
+                </div>
+                <div class="service-item">
+                    <span class="item-symbol">&#129463;</span>
+                    <p class="list-name">Invisible Braces</p>
+                </div>
+                <div class="service-item">
+                    <span class="item-symbol">&#129463;</span>
+                    <p class="list-name">Dental Implants</p>
+                </div>
+                <div class="service-item">
+                    <span class="item-symbol">&#128522;</span>
+                    <p class="list-name">Smile Makeover</p>
+                </div>
+                <div class="service-item">
+                    <span class="item-symbol">&#129463;</span>
+                    <p class="list-name">Kids Dentistry</p>
+                </div>
+                <div class="service-item">
+                    <span class="item-symbol">&#129463;</span>
+                    <p class="list-name">Gum Treatment</p>
+                </div>
+                <div class="service-item">
+                    <span class="item-symbol">&#129463;</span>
+                    <p class="list-name">Wisdom Tooth</p>
+                </div>
+                <div class="service-item">
+                    <span class="item-symbol">&#129463;</span>
+                    <p class="list-name">Laser/Painless Dentistry</p>
+                </div>
+                <div class="service-item">
+                    <span class="item-symbol">&#129463;</span>
+                    <p class="list-name">Crowns & Bridges</p>
+                </div>
+                <div class="service-item">
+                    <span class="item-symbol">&#129463;</span>
+                    <p class="list-name">Dentures</p>
+                </div>
+            </div>
+            <p class="explore-treatments"><span>&#x1F50D;</span>Explore Treatments <span class="arrow">&#8594;</span></p>
+        </div>
+    </main>
+    <main>
+        <div class="expert-container">
+            <div class="left-section">
+                <h2>Expert Guidance for Healthy Smiles</h2>
+                <p>Contact Now</p>
+                <form>
+                    <input type="text" name="name" placeholder="Name" value="Amit Rana" required>
+                    <input type="text" name="mobile" placeholder="Mobile Number" required>
+                    <select name="city">
+                        <option value="" disabled selected>Select Concern</option>
+                        <option value="ahmedabad">Root Canal</option>
+                        <option value="amritsar">Braces</option>
+                        <option value="bengaluru">Teeth whitening</option>
+                        <option value="chandigarh">Invisible</option>
+                        <option value="chennai">Gum</option>
+                        <option value="delhi">Tooth broken</option>
+                        <option value="amritsar">Scanning</option>
+                        <option value="bengaluru">Dentures</option>
+                        <option value="chandigarh">Crowns</option>
+                        <option value="chennai">Wanding</option>
+                    </select>
+                    <button type="submit">Book A Free Consultation</button>
+                </form>
+            </div>
+
+            <div class="right-section">
+                <div class="safety-protocols">
+                    <h3>10x Safety Protocols</h3>
+                    <p>Monitored by DORI (Artificial Intelligence System)</p>
+                    <a href="#">Learn More &rarr;</a>
+                </div>
+                <div class="clinic-info">
+                    <div class="info-box">
+                        <h4>450+ Neighbourhood</h4>
+                        <p>Clinics Pan India</p>
+                        <div class="img-con">
+                            <!--<span class="item-symbol">&#129463;</span>-->
+                        </div>
+                        <p class="info-p">Locate Clinic near you<a>&rarr;</a></p>
+                    </div>
+                    <div class="info-box">
+                        <h4>1200+ Expert Doctors</h4>
+                        <p>Covering All Specialities</p>
+                        <div class="img-con">
+                            <!--<span class="item-symbol">&#129463;</span>-->
+                        </div>
+                        <p class="info-q">Exports Dentists Nearby<a>&rarr;</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <main>
+        <div class="carousel-head">
+            <h1>In their Own Words</h1>
+        </div>
+        <div class="carousel">
+            <div class="carousel-item">
+                <img src="image1.jpg" class="image-add" alt="Person 1">
+                <div class="names-end"></div> 
+                <p class="name">Shubham</p>
+                <p class="procedure">Braces</p>
+            </div>
+            <div class="carousel-item">
+                <img src="image2.jpg" alt="Person 2">
+                <div class="names-end"></div>
+                <p class="name">Shubham</p>
+                <p class="procedure">Braces</p>
+            </div>
+            <div class="carousel-item">
+                <img src="image3.jpg" alt="Person 3">
+                <div class="names-end"></div>
+                <p class="name">Shubham</p>
+                <p class="procedure">Braces</p>
+            </div>
+            <div class="carousel-item">
+                <img src="video-thumbnail.jpg" alt="Person 4">
+                <div class="names-end"></div>
+                <p class="name">Shubham</p>
+                <p class="procedure">Braces</p>
+            </div>
+            <div class="carousel-item">
+                <img src="image5.jpg" alt="Person 5">
+                <div class="names-end"></div>
+                <p class="name">Shubham</p>
+                <p class="procedure">Braces</p>
+            </div>
+        </div>
+    </main>
+    <main>
+        <div class="container-unmatch">
+            <div class="left-section-unmatch">
+                <h2>Unmatched Dental Excellence by 1200+ Specialists</h2>
+                <div class="info-u">
+                    <div class="info-item">
+                        <!-- <img src="specialists-icon.png" alt="Specialists Icon"> -->
+                        <div class="info-item-image"></div>
+                        <div class="info-item-list">
+                            <h1 class="info-head">Team of Specialists</h1>
+                            <p class="info-item-p"><span>70+ </span>Laser Specialists</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <!-- <img src="specialists-icon.png" alt="Specialists Icon"> -->
+                        <div class="info-item-image"></div>
+                        <div class="info-item-list">
+                            <p class="info-item-p2">Leading with <span>80% </span>women</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <!-- <img src="specialists-icon.png" alt="Specialists Icon"> -->
+                        <div class="info-item-image"></div>
+                        <div class="info-item-list">
+                            <p class="info-item-p2 l"><span>65% </span>MDS Doctors for specialised care</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="right-section-one">
+                <div class="right-section-unmatch">
+                    <div class="doctor-card">
+                        <div class="doctor-image"></div>
+                        <p>Dr. Suresh Kumar</p>
+                        <span>18+ Yars Experience</span>
+                    </div>
+                    <div class="doctor-card">
+                        <div class="doctor-image"></div>
+                        <p>Dr. Rajni Mary</p>
+                        <span>10+ Years Experience</span>
+                    </div>
+                    <div class="doctor-card">
+                        <div class="doctor-image"></div>
+                        <p>Dr.Shushma Reddy</p>
+                        <span>20+ Years Experience</span>
+                    </div>
+                </div>
+                <div class="cta-section">
+                    <button>Meet our Doctors</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <main>
+        <div class="carousel-container-exp">
+        <!-- Radio buttons for slide control -->
+        <input type="radio" name="carousel-exp" id="slide11" >
+        <input type="radio" name="carousel-exp" id="slide22" checked>
+        <input type="radio" name="carousel-exp" id="slide33">
+
+        <!-- The carousel wrapper -->
+        <div class="carousel-exp">
+            <div class="carousel-slide-exp">
+                <!--<img src="cleanliness.jpg" alt="Assuring Cleanliness">-->
+                <div class="carousel-img-exp">
+                <div class="text-overlay">
+                    <h2>Assuring Cleanliness</h2>
+                    <p>Rigid 4-Step Sterilization process, assuring a safe & spotless clinic.</p>
+                    <a href="#">Learn More <span>🔍</span></a>
+                </div>
+                </div>
+            </div>
+            <div class="carousel-slide-exp">
+                <!--<img src="aips.jpg" alt="Experience AIPS">-->
+                <div class="carousel-img-exp">
+                <div class="text-overlay">
+                    <h2>Experience AIPS</h2>
+                    <p>Our AI-Powered Sterilization (AIPS) Monitoring system from DORI, USA Exclusively at Clove</p>
+                    <a href="#">Learn More <span>🔍</span></a>
+                </div>
+                </div>
+            </div>
+            <div class="carousel-slide-exp">
+                <!--<img src="slide3.jpg" alt="Third Slide">-->
+                <div class="carousel-img-exp">
+                <div class="text-overlay">
+                    <h2>Third Slide</h2>
+                    <p>Details about the third slide.</p>
+                    <a href="#">Learn More <span>🔍</span></a>
+                </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Navigation buttons -->
+        <div class="carousel-nav-exp">
+            <label for="slide33" class="prev">⟵</label>  
+            <label for="slide11" class="next">⟶</label>
+        </div>
+    </div>
+    </main>
+</div>
+</body>
+
+</html>

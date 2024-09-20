@@ -1,0 +1,1063 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f3ee;
+}
+.project{
+    min-width: 1920px;
+    height: 9901;
+}
+
+header {
+    background-color: #fff7f3;
+    padding: 10px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.logo_p {
+    font-family: "Roboto";
+    font-size: 30px;
+    font-weight: 600;
+    color: #ff914d;
+}
+
+span {
+    color: black;
+}
+
+.logo_d {
+    font-size: 12px;
+    margin-left: 8px;
+    margin-right: 8px;
+    text-align: center;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 13vh;
+}
+
+.logo img {
+    width: 70px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 80px;
+    font-size: 13px;
+}
+
+.nav-links li {
+    position: relative;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #3d3d3d;
+    font-size: 20px;
+
+}
+
+
+.nav-actions {
+    display: flex;
+    gap: 20px;
+    margin-left: 10px;
+    font-size: 20px;
+}
+
+.btn-b {
+    padding: 30px 30px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    width: 300px;
+    height: 85px;
+    margin-top: 8px;
+}
+.btn-h{
+    text-align: center;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    width: 250px;
+    height: 80px;
+    margin-top: 10px;
+    margin-bottom:10px;
+}
+
+.help {
+    background-color: transparent;
+    color: #ff914d;
+    border: 2px solid #ff914d;
+    padding-left: 50px;
+}
+
+.help:hover {
+    background-color: #ff914d;
+    color: white;
+}
+
+.dropdown-icon {
+    margin-left: 5px;
+    font-size: 18px;
+    color: orange;
+}
+
+.dropdown-icon-phone {
+    margin-right: 6px;
+}
+
+
+
+/* Dropdown styling */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    width: 1260px;
+    height: 434px;
+}
+
+.dropdown-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.dropdown-grid a {
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #3d3d3d;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dropdown-grid a:hover {
+    background-color: #fff7f3;
+    color: #ff914d;
+}
+
+/* Show dropdown on hover */
+.dropdown-nav:hover .dropdown-content {
+    display: block;
+}
+
+/* Action buttons styling */
+.nav-actions {
+    display: flex;
+    gap: 20px;
+}
+
+.arrow {
+    color: #ff914d;
+    font-size: 1.2em;
+}
+
+/* button inside card details*/
+.dropdown-content-help {
+    display: none;
+    position: absolute;
+    top: 50px;
+    right: 0;
+    background-color: white;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+    width: 250px;
+    z-index: 1;
+}
+
+.help-dropdown:hover .dropdown-content-help {
+    display: block;
+}
+
+.contact-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contact-item p {
+    margin: 0;
+}
+
+.dropdown-help-card {
+    display: flex;
+    justify-content: space-between;
+}
+
+.dropdown-card-head {
+    font-family: "Roboto";
+    font-size: 12px;
+    margin-bottom: 5px;
+}
+
+.dropdown-card-para {
+    font-family: "Roboto";
+    font-size: 10px;
+}
+
+.dropdown-card-icon {
+    font-size: 20px;
+}
+
+hr {
+    border: 0;
+    border-top: 1px solid #F77E2F;
+    margin: 10px 0;
+}
+
+/* book appointment button*/
+
+.book-appointment {
+    background-color: #ff914d;
+    color: white;
+    border: none;
+    font-family: "Roboto";
+    cursor: pointer;
+    font-size: 25px;
+}
+
+.book-button-card:hover .modal {
+    display: block;
+}
+
+/* Modal Styles */
+.modal {
+    display: none;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.5);
+    top: 20%;
+    right: 18%;
+    bottom: 20%;
+    left: 18%;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+}
+
+.modal-content {
+    background-color: white;
+    border-radius: 10px;
+    padding: 30px;
+    max-width: 100%;
+    position: relative;
+}
+
+.modal-content h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.modal-content p {
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+.modal-content h3 {
+    color: #f77e2f;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* Form Styles */
+.appointment-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    font-size: 12px;
+    margin-bottom: 5px;
+}
+
+.form-group input {
+    padding: 10px;
+    border-radius: 25px;
+    border: 1px solid #ddd;
+    font-size: 14px;
+    width: 100%;
+}
+
+.otp-verify {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.verify-btn {
+    background-color: #f77e2f;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-left: 5px;
+}
+
+/* Next Button */
+.next-btn {
+    grid-column: 1 / -1;
+    background-color: #f77e2f;
+    border: none;
+    color: white;
+    padding: 12px;
+    width: 90%;
+    border-radius: 25px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-left: 21px;
+}
+
+/* slides */
+.carousel-container {
+    width: 100%;
+    position: relative;
+    height: 100%;
+    padding-top: 2px;
+}
+
+.carousel-slides {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+
+.carousel-images {
+    display: flex;
+    transition: transform 0.3s ease-in-out;
+    width: 100%;
+}
+
+.carousel-image {
+    max-width: 1920px;
+    flex-shrink: 0;
+}
+
+/* .carousel-image img {
+    width: 100%;
+    height: 15vh;
+    display: block;
+} */
+.carousel-image-card{
+    width: 1920px;
+    height: 60vh;
+    display: block;
+    border-radius: 25px;
+    background-color: orange;
+
+}
+input[type="radio"] {
+    display: none;
+}
+
+/* Set the position of images based on which radio input is checked */
+#slide1:checked~.carousel-images {
+    transform: translateX(0%);
+}
+
+#slide2:checked~.carousel-images {
+    transform: translateX(-100%);
+}
+
+/* Carousel navigation (radio button labels) */
+.carousel-navigation {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+}
+
+.nav-btn {
+    width: 35px;
+    height: 4px;
+    border-radius: 0;
+    background-color: #bbb;
+    margin: 0 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#slide1:checked~.carousel-navigation label[for="slide1"],
+#slide2:checked~.carousel-navigation label[for="slide2"] {
+    background-color: #333;
+}
+
+/* citesdropdowns */
+.main-container {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    border-left: 2px solid #f4a44e;
+    padding: 10px;
+    height: 40vh;
+    width: 40vw;
+}
+
+.dropdown-city select {
+    width: 100%;
+    height: 12vh;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 50px;
+    font-size: 16px;
+    color: #bbb;
+    appearance: none;
+    background-color: #fff;
+    outline: none;
+    position: relative;
+    margin-top: 20px;
+}
+
+.dropdown-city select:focus {
+    border-color: #f4a44e;
+}
+
+.dropdown-city {
+    position: relative;
+}
+
+.dropdown-city::after {
+    content: '\25BC';
+    /* Down arrow symbol */
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+    color: #f4a44e;
+}
+
+.locate-btn {
+    background-color: #f4a44e;
+    border: none;
+    color: white;
+    padding: 30px 20px;
+    border-radius: 50px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 50px;
+    width: 100%;
+}
+
+.locate-btn:hover {
+    background-color: #e59438;
+}
+
+/*  Dental services*/
+
+.services-section {
+    background-color: #fdf4eb;
+    padding: 30px;
+    text-align: center;
+    
+    border-radius: 10px;
+    margin: 40px;
+}
+
+h2 {
+    color: #333;
+    font-size: 24px;
+    line-height: 1.4;
+    width: 50vw;
+}
+
+.service-head {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.list-name {
+    font-family: "Roboto";
+    font-weight: bold;
+    margin-top: 10px;
+    margin-left: 10px;
+    width: 80px;
+    text-align: center;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+    justify-items: center;
+    margin-top: 20px;
+}
+
+.item-symbol {
+    height: 100px;
+    width: 100px;
+}
+
+.service-item {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    width: 140px;
+
+}
+
+.service-item:hover {
+    transform: translateY(-5px);
+}
+
+.service-item img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+.service-item p {
+    font-size: 14px;
+    color: #333;
+}
+
+.explore-treatments {
+    margin-top: 30px;
+    color: #e17e51;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* experts */
+
+
+.expert-container {
+    display: flex;
+    width: 100%;
+    margin: 20px auto;
+    padding-left: 80px;
+    padding-right: 80px;
+    border-radius: 10px;
+    justify-content: space-between;
+}
+
+.left-section {
+    background-color: #fdf4eb;
+    border-radius: 20px;
+    margin-right: 20px;
+    text-align: left;
+    padding: 80px 50px;
+    width: 40%;
+}
+
+.left-section h2 {
+    font-family: "Roboto";
+    font-size: 50px;
+    color: #333;
+    margin-bottom: 10px;
+    width: 40vw;
+    margin-left: 40px;
+}
+
+.left-section p {
+    font-size: 20px;
+    width: 40vw;
+    margin-bottom: 20px;
+    color: #666;
+    margin-left: 40px;
+}
+.left-section form{
+    margin-left: 40px;
+    width: 40vw;
+}
+
+
+form input,
+form select {
+    width: 40vw;;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    font-size: 20px;
+    
+}
+
+form button {
+    width: 40vw;
+    background-color: #FF7E00;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.right-section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+}
+
+.safety-protocols {
+    background-color: #D4D5E5;
+    border-radius: 25px;
+    margin-bottom: 20px;
+    padding: 20px 20px;
+}
+
+.safety-protocols h3 {
+    font-size: 22px;
+    color: #333;
+}
+
+.safety-protocols p {
+    color: #777;
+    font-size: 14px;
+    margin-top: 8px;
+    margin-bottom: 60px;
+}
+
+.safety-protocols a {
+    margin-top: 80px;
+    font-size: 14px;
+    color: #FF7E00;
+    text-decoration: underline;
+    display: inline-block;
+    margin-left: 15px;
+    margin-bottom: 10px;
+}
+
+.clinic-info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.info-box {
+    background-color: #F0F8FF;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    flex: 1;
+    margin-right: 10px;
+    height: 40vh;
+}
+
+.info-box h4 {
+    font-size: 18px;
+    color: #333;
+}
+
+.info-p {
+    font-family: "Roboto";
+    font-size: 12px;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.info-q {
+    font-family: "Roboto";
+    font-size: 12px;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.img-con {
+    width: 100%;
+    height: 55%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 20px;
+    background-color: orange;
+    border-radius: 15px;
+}
+
+.info-box p {
+    color: #666;
+}
+
+.info-box:last-child {
+    margin-right: 0;
+}
+
+/* in their own words */
+
+.carousel-head {
+    font-family: "Roboto";
+    font-size: 16px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.carousel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-x: auto;
+    white-space: nowrap;
+    padding: 20px;
+}
+
+.carousel-item {
+    flex: 0 0 auto;
+    margin: 0 10px;
+    border-radius: 10px;
+    overflow: auto;
+    width: 25%;
+    height: 60vh;
+}
+
+.carousel-item img {
+    width: 200px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* .image-add{
+    width: 100%;
+    height: 70vh;
+} */
+
+.names-end {
+    height: 76%;
+    background-color: green;
+    border-radius: 25px;
+}
+
+.name {
+    margin-top: 10px;
+    font-size: 12px;
+    color: #333;
+}
+
+.procedure {
+    margin-top: 5px;
+    font-size: 17px;
+    color: #FF7E00;
+    font-weight: 500;
+}
+
+/* unmatch  */
+
+.container-unmatch {
+    display: flex;
+    align-items: flex-start;
+    max-width: 1920px;
+    height: 758px;
+    margin-top: 10px;
+    background-color: #fdf4eb;
+}
+
+.left-section-unmatch {
+    flex: 1;
+}
+
+.left-section-unmatch h2 {
+    font-size: 26px;
+    color: #333;
+    margin-bottom: 20px;
+    padding: 10px;
+    margin-left: 80px;
+    margin-top: 20px;
+}
+
+.info-u {
+    display: flex;
+    flex-direction: column;
+}
+
+.info-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+     margin-left: 80px;
+}
+
+.info-item img {
+    width: 80px;
+    height: 80px;
+    margin-right: 15px;
+}
+
+.info-item span {
+    font-size: 20px;
+    color: #FF7E00;
+    font-weight: 500;
+}
+
+.info-item-list {
+    display: flex;
+    flex-direction: column;
+    margin-left: 60px;
+}
+
+.info-item-image {
+    width: 15vw;
+    height: 17vh;
+    background-color: orange;
+    border-radius: 25px;
+    margin-left: 20px;
+}
+
+.info-head {
+    font-family: "Roboto";
+    font-size: 20px;
+}
+
+.info-item-p {
+    font-family: "Roboto";
+    font-size: 14px;
+    font-weight: 500;
+    margin-top: 8px;
+    margin-bottom: 10px;
+}
+
+.info-item-p2 {
+    font-family: "Roboto";
+    font-size: 15px;
+}
+
+.l {
+    width: 17vw;
+}
+
+.right-section-unmatch {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-x: auto;
+    white-space: nowrap;
+    padding: 20px;
+    width: 100%;
+}
+.right-section-one{
+    width: 70%;
+}
+
+.doctor-card {
+    flex: 0 0 auto;
+    margin: 0 10px;
+    text-align: center;
+    border-radius: 10px;
+    overflow: auto;
+    width: 35%;
+    height: 60vh;
+}
+
+.doctor-image {
+    background-color: orange;
+    height: 50vh;
+    border-radius: 20px;
+}
+
+/* .doctor-card img {
+    width: 200px;
+    height: 250px;
+    border-radius: 10px;
+    object-fit: cover;
+    margin-bottom: 10px;
+} */
+
+.doctor-card p {
+    font-size: 20px;
+    color: #333;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.doctor-card span {
+    font-size: 15px;
+    color: #777;
+    padding-bottom: 10px;
+}
+
+.cta-section {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 8px;
+    width: 100%;
+}
+
+.cta-section button {
+    background-color: #FF7E00;
+    color: #fff;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 25px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 27vw;
+}
+
+.cta-section button:hover {
+    background-color: #FF9A33;
+}
+
+
+/* exp  */
+
+.carousel-container-exp {
+    position: relative;
+    width: 100%;
+    max-width: 1920px;
+    height: 758px;
+    overflow: hidden;
+}
+
+.carousel-exp {
+    display: flex;
+    width: 300%;
+    height: 100%;
+    transition: transform 0.3s ease-in-out;
+}
+
+.carousel-slide-exp {
+    width: 33.33%;
+    height: 100%;
+    position: relative;
+}
+
+/* .carousel-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+} */
+
+.carousel-img-exp{
+    width: 95%;
+    height: 100%;
+    object-fit: cover;
+    background-color: orange;
+    border-radius: 20px;
+    margin-left: 15px;
+}
+
+.text-overlay {
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    border-radius: 10px;
+    width: 60vh;
+    height: 45vh;
+}
+
+.text-overlay h2 {
+    font-family: "Roboto";
+    font-size: 36px;
+    margin-top: 20px;
+    width: 15vw;
+}
+
+.text-overlay p {
+    font-family: "Roboto";
+    font-size: 18px;
+    margin-top:14px;
+    margin-bottom:14px;
+}
+
+.text-overlay a {
+    font-family: "Roboto";
+    color: #FF7E00;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 10px;
+    display: inline-block;
+}
+
+.carousel-nav-exp {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    display: flex;
+    align-content: flex-end;
+    justify-content: flex-end;
+}
+
+.prev, .next {
+    background-color:#fdf4eb;
+    color: #FF7E00;
+    padding: 15px;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 50%;
+    text-align: center;
+    user-select: none;
+    margin-right: 15px;
+}
+
+
+/* Hide radio buttons */
+input[type="radio"] {
+    display: none;
+}
+
+/* Control the slide transitions */
+#slide11:checked ~ .carousel-exp {
+    transform: translateX(0%);
+}
+
+#slide22:checked ~ .carousel-exp {
+    transform: translateX(-33.33%);
+}
+
+#slide33:checked ~ .carousel-exp {
+    transform: translateX(-66.66%);
+}
+
+
+
+
+
+
+
